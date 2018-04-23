@@ -16,14 +16,6 @@ import java.security.*;
 import java.security.interfaces.RSAPrivateCrtKey;
 import java.util.Date;
 
-/**
- * A simple utility class that generates a RSA PGPPublicKey/PGPSecretKey pair.
- * <p>
- * usage: RSAKeyPairGenerator [-a] identity passPhrase
- * <p>
- * Where identity is the name to be associated with the public key. The keys are placed
- * in the files pub.[asc|bpg] and secret.[asc|bpg].
- */
 public class RSAKeyPairGenerator {
     public void exportKeyPair(
             OutputStream secretOut,
