@@ -1,4 +1,4 @@
-package io.github.villcan.pgp;
+package io.github.villcab.pgp;
 
 import org.bouncycastle.bcpg.ArmoredOutputStream;
 import org.bouncycastle.bcpg.HashAlgorithmTags;

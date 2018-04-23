@@ -1,4 +1,4 @@
-package io.github.villcan.pgp;
+package io.github.villcab.pgp;
 
 import org.bouncycastle.jce.provider.BouncyCastleProvider;
 import org.bouncycastle.openpgp.PGPException;
