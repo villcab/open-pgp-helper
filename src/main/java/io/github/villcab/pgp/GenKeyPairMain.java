@@ -16,9 +16,9 @@ public class GenKeyPairMain {
     private static final boolean isArmored = true;
     private static final int keySize = 2048;
 
-    public static void main(String[] args) throws IOException, PGPException, SignatureException, NoSuchProviderException, InvalidKeyException, NoSuchAlgorithmException {
-        RSAKeyPairGenerator rkpg = new RSAKeyPairGenerator();
+    public static void main(String[] args) throws IOException, PGPException, NoSuchProviderException, NoSuchAlgorithmException {
         Security.addProvider(new BouncyCastleProvider());
+        RSAKeyPairGenerator rkpg = new RSAKeyPairGenerator();
         KeyPairGenerator kpg = KeyPairGenerator.getInstance("RSA", "BC");
         kpg.initialize(keySize);
         KeyPair kp = kpg.generateKeyPair();

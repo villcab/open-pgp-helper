@@ -16,6 +16,8 @@
         <maven-eclipse-plugin.version>2.10</maven-eclipse-plugin.version>
         <maven.compiler.target>${java.version}</maven.compiler.target>
         <maven.compiler.source>${java.version}</maven.compiler.source>
+
+        <bouncycastle.version>1.59</bouncycastle.version>
     </properties>
 
     <dependencies>
@@ -23,13 +25,13 @@
         <dependency>
             <groupId>org.bouncycastle</groupId>
             <artifactId>bcpg-jdk15on</artifactId>
-            <version>1.50</version>
+            <version>${bouncycastle.version}</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.bouncycastle/bcprov-jdk15on -->
         <dependency>
             <groupId>org.bouncycastle</groupId>
             <artifactId>bcprov-jdk15on</artifactId>
-            <version>1.50</version>
+            <version>${bouncycastle.version}</version>
         </dependency>
     </dependencies>
 

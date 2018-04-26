@@ -12,7 +12,8 @@ import org.bouncycastle.openpgp.operator.jcajce.JcePBESecretKeyEncryptorBuilder;
 
 import java.io.IOException;
 import java.io.OutputStream;
-import java.security.*;
+import java.security.PrivateKey;
+import java.security.PublicKey;
 import java.security.interfaces.RSAPrivateCrtKey;
 import java.util.Date;
 
@@ -25,7 +26,7 @@ public class RSAKeyPairGenerator {
             String identity,
             char[] passPhrase,
             boolean armor)
-            throws IOException, InvalidKeyException, NoSuchProviderException, SignatureException, PGPException {
+            throws IOException, PGPException {
         if (armor) {
             secretOut = new ArmoredOutputStream(secretOut);
         }
